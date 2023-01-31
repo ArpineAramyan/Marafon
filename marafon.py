@@ -49,3 +49,17 @@ def characters_1(str1):
     for i in str1:
         m[i] = str1.count(i)
     return m
+
+
+def razb(l):
+    if len(l) % 3 == 0:
+        s1 = s2 = len(l) // 3
+    elif len(l) % 3 == 1:
+        s1 = s2 = len(l) // 3
+    else:
+        s1 = len(l) // 3
+        s2 = len(l) // 3 + 1
+    l1 = l[:s1]
+    l2 = l[s1:s1+s2]
+    l3 = l[s1+s2:]
+    return l1[::-1], l2[::-1], l3[::-1]
