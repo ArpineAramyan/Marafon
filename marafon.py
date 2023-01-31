@@ -41,3 +41,11 @@ def common(str1, str2):
         if str2.count(i) > 0 and i not in l:
             l.append(i)
     return l
+
+
+def characters_1(str1):
+    str1 = str1.lower()
+    m = {}
+    for i in str1:
+        m[i] = str1.count(i)
+    return m
