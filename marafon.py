@@ -22,3 +22,8 @@ def is_prime(number):
             return False
         i = i + 1
     return True
+
+
+def square(a):
+    t = (4*a, a*a, math.sqrt(2*a*a))
+    return t
