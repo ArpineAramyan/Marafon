@@ -33,3 +33,11 @@ def is_year_leap(year):
     if year % 4 == 0:
         return True
     return False
+
+
+def common(str1, str2):
+    l = []
+    for i in str1:
+        if str2.count(i) > 0 and i not in l:
+            l.append(i)
+    return l
