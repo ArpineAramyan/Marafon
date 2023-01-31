@@ -27,3 +27,9 @@ def is_prime(number):
 def square(a):
     t = (4*a, a*a, math.sqrt(2*a*a))
     return t
+
+
+def is_year_leap(year):
+    if year % 4 == 0:
+        return True
+    return False
